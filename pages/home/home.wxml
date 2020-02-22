@@ -1,2 +1,4 @@
 <!--pages/home/home.wxml-->
 <text>我是home</text>
+<view>{{home}}</view>
+<view wx:for="{{clothes}}">{{item.brand}}品牌{{item.size}}尺码的id是{{item.id}}</view>

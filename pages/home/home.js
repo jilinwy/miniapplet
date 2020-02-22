@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    home:"这里是首页",
+    clothes:[
+      {id:1,brand:"jake",size:34},
+      {id:2,brand:"joen",size:36}
+    ]
   },
 
   /**
