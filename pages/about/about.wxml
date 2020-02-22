@@ -1,0 +1,11 @@
+<!--pages/about/about.wxml-->
+<!-- 1.小程序的数据绑定 -->
+<view>hello {{name}}</view>
+<view>我的年龄：{{age}}</view>
+<!-- 2.列表体验 wx:for -->
+<view wx:for="{{people}}">{{item.id}}号{{item.name}}今年{{item.age}}</view>
+
+<!-- 事件监听改变data -->
+<view>总次数：{{counts}}</view>
+<button bindtap="backspacejia">加</button>
+<button bindtap="backspacejian">减</button>
