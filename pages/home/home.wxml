@@ -2,3 +2,11 @@
 <text>我是home</text>
 <view>{{home}}</view>
 <view wx:for="{{clothes}}">{{item.brand}}品牌{{item.size}}尺码的id是{{item.id}}</view>
+
+
+<!-- 需要使用 button 来授权登录 -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view>
+
+<view wx:for="{{list}}">{{item}}</view>
+

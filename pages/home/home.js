@@ -1,4 +1,11 @@
 // pages/home/home.js
+//getApp()可以获取App（）的实例对象
+const app = getApp()
+
+const name = app.globalData.name
+const age = app.globalData.age
+
+
 Page({
 
   /**
@@ -9,15 +16,34 @@ Page({
     clothes:[
       {id:1,brand:"jake",size:34},
       {id:2,brand:"joen",size:36}
-    ]
+    ],
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    list:[]
   },
 
+  /* 监听页面的生命周期函数 */
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad (options) {
+    // 查看是否授权
+    wx.getSetting({
+      success(res) {
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+          wx.getUserInfo({
+            success: function (res) {
+              console.log(res.userInfo)
+            }
+          })
+        }
+      }
+    })
   },
+  bindGetUserInfo(e) {
+    console.log(e.detail.userInfo)
+  },
+  
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -30,7 +56,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.request({
+      url: 'http://123.207.32.32:8000/recommend',
+      success: (res) => {
+        console.log(res)
+        const data = res.data
+        this.setData(
+          {list:data}
+        )
+      }
+    })
   },
 
   /**
