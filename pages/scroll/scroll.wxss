@@ -1,0 +1,22 @@
+/* pages/scroll/scroll.wxss */
+.scroll1{
+  background: blueviolet;
+  white-space: nowrap;
+}
+.view1{
+  background: greenyellow;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.view2{
+  background: greenyellow;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+}
+.scroll2{
+  background: blueviolet;
+  height: 150px
+}

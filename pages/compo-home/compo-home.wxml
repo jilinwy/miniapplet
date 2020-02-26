@@ -1,0 +1,24 @@
+<!--pages/compo-home/compo-home.wxml-->
+<view class="title">我本来是红色的</view>
+
+<!--1 自定义组件的基本使用 -->
+<my-cpn />
+
+
+<!--2 自定义组件的样式细节 -->
+<!-- 该方法控制父子组件的样式 options: {
+    styleIsolation: "apply-shared" }
+    isolated:互不影响
+    apply-shared:页面控制自定义
+    shared:互相控制 -->
+<my-style />
+
+
+<!--3 给自定义组件传递数据/样式 -->
+<my-prop day="今天" content="我是美国队长" title="red"/>
+<my-prop day="明天" content="我是黑寡妇" title="green"/>
+<my-prop day="后天" content="我是神盾局" title="blue"/>
+<!--4 组件内部向外发送事件 -->
+<view>{{count}}</view>
+<my-event bind:count="count" />
+<!-- 5是否可以自定义组件内操作函数 -->

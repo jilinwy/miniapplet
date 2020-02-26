@@ -1,0 +1,14 @@
+/* pages/compo-home/compo-home.wxss */
+
+.title {
+  color: red
+}
+.red {
+  color: red
+}
+.green {
+  color: greenyellow
+}
+.blue {
+  color: blue
+}

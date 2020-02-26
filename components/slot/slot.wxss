@@ -1,0 +1,4 @@
+/* components/clot/clot.wxss */
+.view9 {
+  color: red
+}

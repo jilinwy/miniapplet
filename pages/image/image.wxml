@@ -1,0 +1,9 @@
+<!--pages/image/image.wxml-->
+<view>图片知识点</view>
+<view wx:for="{{imagePath}}" >
+<image src="{{item}}" mode="aspectFit"
+show-menu-by-longpress
+></image>
+</view>
+
+<button bindtap="handlechooseAlbum">选择图片</button>

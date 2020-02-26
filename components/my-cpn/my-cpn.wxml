@@ -1,0 +1,4 @@
+<!--components/my-cpn/my-cpn.wxml-->
+<view class="view1">我是{{rionman}}</view>
+<view class="view2">我是{{rionman}}2</view>
+<view class="view3">我是{{rionman}}3</view>

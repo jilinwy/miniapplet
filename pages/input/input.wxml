@@ -1,0 +1,9 @@
+<!--pages/input/input.wxml-->
+<view>input知识点</view>
+<input class="input1" value="我是默认的"></input>
+<input class="input2" type="text"></input>
+<input class="input1" type="number"></input>
+<input class="input2" type="idcard"></input>
+<input class="input1" type="digit"></input>
+<input class="input2" password="{{ture}}"></input>
+<input class="input1" placeholder="快他妈写"></input>

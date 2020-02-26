@@ -1,0 +1,10 @@
+/* components/my-style/my-style.wxss */
+.title {
+  font-size: 100rpx
+}
+.title1 {
+  color: blue
+}
+.title2 {
+  color: green
+}

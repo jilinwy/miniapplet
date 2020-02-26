@@ -1,0 +1,25 @@
+/* pages/view/view.wxss */
+.text1 {
+  color: green
+}
+.button1 {
+  background: pink
+}
+
+.vi2 {
+  width: 50px;
+  height: 50px;
+  background: purple
+}
+.hvi2 {
+  background: orange
+}
+.vi1 {
+  width: 100px;
+  height: 100px;
+  background: yellow
+  
+}
+.hvi {
+  background: blue
+}

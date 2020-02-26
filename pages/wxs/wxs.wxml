@@ -1,0 +1,7 @@
+<!--pages/wxs/wxs.wxml-->
+<view>wxs知识点</view>
+<view>数据处理,有点类似于Java的工具类</view>
+
+<wxs src="../../wxs/tools.wxs" module="tools" />
+
+<view>{{tools.priceFormat(message,3)}}</view>

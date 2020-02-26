@@ -1,0 +1,7 @@
+/* pages/input/input.wxss */
+.input1{
+  background: seashell
+}
+.input2{
+  background: silver
+}

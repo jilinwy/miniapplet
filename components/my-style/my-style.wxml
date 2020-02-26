@@ -1,0 +1,5 @@
+<!--components/my-style/my-style.wxml-->
+
+<view class="title">我是雷神神</view>
+<view class="title1">我是鹰眼眼</view>
+<view class="title2">我是猎鹰鹰</view>

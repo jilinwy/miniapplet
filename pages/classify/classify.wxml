@@ -1,2 +1,13 @@
 <!--pages/classify/classify.wxml-->
-<text>产品分类</text>
+<!-- text文字中加入\n 可以还行 -->
+<text>产品分类\n</text>
+<text>主营产品\n</text>
+<!-- selectable:是text可以被选中，space:内容中空格大小 -->
+<text selectable space="nbsp">衣 服\n</text>
+<text selectable space="ensp">鞋 子\n</text>
+<text selectable space="emsp">袜 子\n</text>
+<!-- decode 识别内容的代码 -->
+<text selectable decode>制 &gt; 服\n</text>
+
+<button hover-class="">按钮</button>
+

@@ -1,0 +1,3 @@
+<!--components/my-prop/my-prop.wxml-->
+
+<view class="title">{{day}}的内容是:{{content}}</view>

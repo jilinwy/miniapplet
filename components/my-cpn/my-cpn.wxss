@@ -1,0 +1,10 @@
+/* components/my-cpn/my-cpn.wxss */
+.view1 {
+  color: olive
+}
+.view2 {
+  color: rebeccapurple
+}
+.view3 {
+  color: skyblue
+}

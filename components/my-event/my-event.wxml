@@ -1,0 +1,4 @@
+<!--components/my-event/my-event.wxml-->
+
+<view>我是标签</view>
+<button bind:tap="handleCount">计数器按钮</button>

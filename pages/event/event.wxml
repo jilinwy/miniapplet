@@ -1,0 +1,16 @@
+<!--pages/event/event.wxml-->
+<view>事件知识点</view>
+
+<block wx:for="{{list}}" wx:key="item">
+  <view data-item="{{item}}" data-index="{{index}}" bindtap="handleGetValue">{{item}}</view>
+</block>
+
+<button open-type="getPhoneNumber" bindgetphonenumber="handleGetPhone" >获取手机号</button>
+
+<!-- 事件冒泡(bindtap)和事件捕获(capture-bind:tap) -->
+
+<view class="view1" capture-bind:tap="handleCaptureview1" bindtap="handleView1">
+  <view class="view2" capture-bind:tap="handleCaptureview2" bindtap="handleView2">
+    <view class="view3" capture-bind:tap="handleCaptureview3" bindtap="handleView3"></view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<!--components/clot/clot.wxml-->
+
+<!-- 单个slot的使用 -->
+<view class="view9">-----------------------------</view>
+<view>我是组件头部</view>
+<slot />
+<view>我是组件尾部</view>
+<view class="view9">-----------------------------</view>
+

@@ -1,0 +1,12 @@
+<!--pages/scroll/scroll.wxml-->
+<view>scroll-view知识点</view>
+
+<scroll-view class="scroll1" scroll-x>
+  <view wx:for="{{10}}" class="view1">{{item}}</view>
+</scroll-view>
+
+<scroll-view class="scroll2" scroll-y>
+  <view wx:for="{{15}}" class="view2">{{item}}</view>
+</scroll-view>
+
+

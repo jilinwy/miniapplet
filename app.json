@@ -1,5 +1,14 @@
 {
   "pages": [
+    "pages/practice/practice",
+    "pages/compo-home/compo-home",
+    "pages/event/event",
+    "pages/wxs/wxs",
+    "pages/wxml/wxml",
+    "pages/scroll/scroll",
+    "pages/input/input",
+    "pages/image/image",
+    "pages/view/view",
     "pages/home/home",
     "pages/about/about",
     "pages/classify/classify"

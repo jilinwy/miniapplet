@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "prac" : "/components/prac/prac",
+    "myslot" :  "/components/slot/slot",
+    "m-slot" : "/components/m-slot/m-slot"
+    
+  }
+}

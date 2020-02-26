@@ -1,0 +1,13 @@
+<!--pages/view/view.wxml-->
+<text>pages/view/view.wxml</text>
+
+<view >
+  <text class="text1">文字</text>
+  <button size="mini" class="button1">按钮</button>
+</view>
+
+<view class="vi1" hover-class="hvi">
+  <view class="vi2" hover-class="hvi2"
+  hover-stop-propagation
+  >nivea</view>
+</view>

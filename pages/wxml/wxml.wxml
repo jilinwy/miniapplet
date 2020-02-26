@@ -1,0 +1,38 @@
+<!--pages/wxml/wxml.wxml-->
+<view>wxml知识点</view>
+
+<view>{{name}} {{cope}}</view>
+<view>{{name + " " + cope}}</view>
+<view>{{nowtime}}</view>
+<view>{{age >= 18 ? "成年人" : "未成年人"}}</view>
+
+<button bindtap="changeColor">改变颜色</button>
+
+<view class="box1" style="color : {{color}}">早餐加盟店</view>
+
+<button bindtap="showFont">按钮</button>
+<view wx:if="{{isShow}}">奇多</view>
+<view>
+  <input type="text" bindinput="scoreInput" class="input1"></input>
+  <button size="mini" bindtap="scoreTap">提交</button>
+</view>
+<view hidden="{{inHidden}}">
+  <view wx:if="{{score >=90}}">优秀</view>
+  <view wx:elif="{{score >=70}}">凉凉</view>
+  <view wx:elif="{{score >=60}}">及格</view>
+  <view wx:else>你是猪吗</view>
+</view>
+
+<block wx:for="{{list}}" wx:for-item="mavel" wx:for-index="i" wx:key="mavel">
+  <view>{{i+1}}.{{mavel}}</view>
+</block>
+
+<view>---------------- tamplate ----------------</view>
+
+<import src="/tamplate_wxml/fromTem.wxml" />
+
+<template is="fromTem" data="{{buttonItem : '按钮',textItem : '复仇者联盟'}}"/>
+
+<template is="inputTem" data="{{buttonItem :'提交'}}" />
+
+<include src="/include_wxml/footer.wxml" />

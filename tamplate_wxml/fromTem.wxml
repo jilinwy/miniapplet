@@ -1,0 +1,9 @@
+<template name="fromTem">
+  <button>{{buttonItem}}</button>
+  <view>{{textItem}}</view>
+</template>
+
+<template name="inputTem">
+  <input style="background: seashell"></input>
+  <button>{{buttonItem}}</button>
+</template>

@@ -1,0 +1,7 @@
+/* pages/wxml/wxml.wxss */
+.box1 {
+  font-size: 50 rpx
+}
+.input1{
+  background: seashell
+}

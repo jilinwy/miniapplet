@@ -1,0 +1,24 @@
+<!--pages/practice/practice.wxml-->
+
+<view>练习</view>
+
+<prac list="{{['流行','新款','爆款']}}" bind:handleValue="handleValue" id="pracid" />
+
+<button bind:tap="updataText">修改文字</button>
+
+<button bind:tap="handleHits">点击</button>
+
+<myslot>
+  <button>我是插入进去的按钮</button>
+</myslot>
+
+<myslot>
+  <slider value="40"></slider>
+</myslot>
+
+
+<m-slot>
+  <slider slot="slot2" value="30"></slider>
+  <button slot="slot1">多个的插入按钮</button>
+  <image src="/image/美樱1.jpg" slot="slot3" mode="aspectFit"></image>
+</m-slot>
