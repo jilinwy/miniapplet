@@ -1,0 +1,5 @@
+<!--pages/navigator/navigator.wxml-->
+<text>pages/navigator/navigator.wxml</text>
+
+<navigator url="/pages/image/image">图片</navigator>
+<navigator open-type="navigateBack">点击返回</navigator>

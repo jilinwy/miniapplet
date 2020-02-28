@@ -9,4 +9,10 @@
 <view wx:else>请升级微信版本</view>
 
 <view wx:for="{{list}}">{{item}}</view>
+<!-- navigate是转发,将父级页面隐藏在背后 -->
+<navigator url="/pages/navigator/navigator" open-type="navigate">跳转navigator页面</navigator>
+<!-- redirect是重定向,将父级页面关闭开启新的页面 -->
+<navigator url="/pages/navigator/navigator" open-type="redirect">跳转navigator页面</navigator> 
+
+
 

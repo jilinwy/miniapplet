@@ -1,0 +1,5 @@
+<!--pages/network/network.wxml-->
+<view>网络请求练习</view>
+<block >
+  <view>{{uuid}}</view>
+</block>

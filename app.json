@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/navigator/navigator",
+    "pages/network/network",
     "pages/practice/practice",
     "pages/compo-home/compo-home",
     "pages/event/event",
